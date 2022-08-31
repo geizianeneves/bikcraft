@@ -1,0 +1,62 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(
+    #ffbf00,
+    #f2a60c
+  ); /*copiado do Figma=linear-gradient(180deg, #FFBF00 0%, #F2A60C 100%), mas posso limpar, nao preciso do 180deg, pq por padrao ja vai de cima p baixo, limpar 0% 100%,nao preciso falar que comeca em 0 e termina em 100 pq tbm eh padrao  */
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /*Ordem= X Y Blur Tamanho da fonte Color */
+  text-transform: uppercase;
+  color: var(--cor-p5);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content; /* o tamanho maximo dele sempre */
+}
+
+.botao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.botao.secundario:hover {
+  background: var(--cor-9);
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+
+.link {
+  display: inline-block;
+  color: var(--cor-p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor; /* usa o valor do pai */
+}
+
+.link:hover {
+  color: var(--cor-0);
+}
