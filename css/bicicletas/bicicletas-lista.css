@@ -17,6 +17,10 @@
   overflow-x: auto; /* defino o que acontece caso o conteudo estoure, pq so crio o scroll para o container que eu quero, e nao para o restante do site, so vai criar a barra tbm no eixo X */
 }
 
+#bicicleta .bicicletas-lista ul {
+  padding: 0px 0px 20px 0px;
+}
+
 .bicicletas-lista li {
   flex: 1;
   min-width: 280px; /* vai criar a barra de scroll para o lado propositalmente - mobile */

@@ -34,7 +34,8 @@
   position: absolute; /*para nao adicionar px extra embaixo das palavras do Menu*/
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover:after,
+.header-menu a.ativo::after {
   width: 100%; /*sublinhado vai aparecer se eu der hover*/
 }
 
